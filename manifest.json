@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Invert Case",
+    "version": "1.0",
+    "description": "This extension either capitalize or decapitalize selected text",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+
+   "options_page": "options.html",
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "notifications",
+        "contextMenus",
+        "notifications",
+        "identity",
+        "tabs"
+    ]
+
+}
