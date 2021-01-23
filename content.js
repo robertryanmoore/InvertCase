@@ -17,5 +17,10 @@ function replaceSelectedText(replacementText) {
 
 chrome.storage.local.get('invertedText', function(result){
     var text = result.invertedText;
+
+    console.log(document.activeElement.isContentEditable);
+    
     replaceSelectedText(text);
+    
+
   });
