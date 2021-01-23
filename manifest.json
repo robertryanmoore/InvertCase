@@ -22,7 +22,8 @@
         "contextMenus",
         "notifications",
         "identity",
-        "tabs"
+        "tabs",
+        "storage"
     ]
 
 }

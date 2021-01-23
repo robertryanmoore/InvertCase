@@ -31,5 +31,10 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
         var replacementText = invertText(selectedText);
         console.log(replacementText);
 
+        chrome.storage.local.set({'invertedText': replacementText});
+
+        chrome.tabs.executeScript({file: 'content.js'});
+        
+
     }});
     
